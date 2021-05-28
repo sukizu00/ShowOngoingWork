@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <title>CONSID</title>
+    <base target="_top" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="FilterPerson.css" rel="stylesheet" /> -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      .workWrapper {
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="Setting.js"></script>
+    <script src="js/ServerCommunication.js"></script>
+    <script src="js/Action.js"></script>
+    <!-- <script src="js/FilterPerson.js"></script> -->
+    <script src="js/test.js"></script>
+    <div class="workWrapper">
+      <div class="ongoingworkWrapper">
+        <select class="nameContainer"></select>
+        <h5>Các công việc đang làm</h5>
+        <ul class="peopleContainer">
+          <!-- <div class="row">
+            <div class="col-sm-8"></div>
+            <div class="col-sm-4"></div>
+          </div> -->
+        </ul>
+        <h5>Các công việc kiểm tra</h5>
+        <ul class="supervisorContainer">
+          <!-- <div class="row">
+            <div class="col-sm-8"></div>
+            <div class="col-sm-4"></div>
+          </div> -->
+        </ul>
+        <h5>Các công việc liên quan</h5>
+        <ul class="relationContainer">
+          <!-- <div class="row">
+            <div class="col-sm-8"></div>
+            <div class="col-sm-4"></div>
+          </div> -->
+        </ul>
+      </div>
+    </div>
+    <script>
+      // var workWrapper = new changeValue({});
+      var workWrapper = new connectDB({});
+    </script>
+  </body>
+</html>
